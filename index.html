@@ -19,16 +19,16 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Perfil</a>
+                    <a class="nav-link active" aria-current="page" href="#ProfileSection">Perfil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Proyectos</a>
+                    <a class="nav-link active" href="#PojectsSection">Proyectos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
+                    <a class="nav-link active" href="#ContactSection">Contacto</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Dropdown
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -63,13 +63,13 @@
 
       <!--Profile Section-->
       <div class="container">
-        <h2 class="titleSection">Perfil</h2>
+        <h2 class="titleSection" id="ProfileSection">Perfil</h2>
         <div class="row">
             <div class="col-sm-12 col-md-4 profile">
                 <h3 class="titleSection">Sobre mí</h3>
                 <br>
-                <p>Apasionado de la programación desde hace años y recientemente titulado con un grado superior con el objetivo de unirme 
-                    al mundo laboral del desarrollo de software y seguir aprendiendo. Manejo diversas tecnologías pero he trabajado principalmente con el ecosistema de Java.</p>
+                <p>Apasionado de la programación desde hace años y titulado con un grado superior en desarrollo de aplicaciones multiplatadorma. He desarrollado tanto para web como para
+                    dispositivos móviles android y escritorio con diverersas tecnologías.</p>
                 <button class="btn btn-primary">Descargar CV</button>
             </div>
             <div class="col-sm-0 col-md-2"></div>
@@ -145,38 +145,36 @@
 
     <!--Pojects Section-->
     <div class="container">
-        <h2 class="titleSection">Proyectos</h2>
+        <h2 class="titleSection" id="PojectsSection">Proyectos</h2>
         <div class="row">
             <div class="col">
                 <div class="card customCard" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="img/pawnsandkingslogo.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">TPV Restaurante</h5>
-                        <p class="card-text">TPV para restaurantes totalmente personalizable y con un diseño limpio y facil de usar. 
-                          Esta desarrollada tanto para versión web como para android utilizando Java, Spring y Angular.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Pawns & Kings</h5>
+                        <p class="card-text">Aplicación de Android para jugar al ajedrez entre usuarios y contra una IA desarrollada desde cero.</p>
+                        <a href="#" class="btn btn-primary">Ver proyecto</a>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card customCard" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="img/printApp8.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">TPV Restaurante</h5>
-                        <p class="card-text">TPV para restaurantes totalmente personalizable y con un diseño limpio y facil de usar. 
-                          Esta desarrollada tanto para versión web como para android utilizando Java, Spring y Angular.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Mensajería para PDA</h5>
+                        <p class="card-text">Aplicación para restaurantes que permite a los clientes enviar mensajes a la PDA de los camareros
+                            así como registrar e imprimir por pantalla los tickets de facturas que sean impresos desde una impresora de tickets de comandos escpos.</p>
+                        <a href="#" class="btn btn-primary">Ver proyecto</a>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card customCard" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="img/invoicemakerDashboard.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">TPV Restaurante</h5>
-                        <p class="card-text">TPV para restaurantes totalmente personalizable y con un diseño limpio y facil de usar. 
-                          Esta desarrollada tanto para versión web como para android utilizando Java, Spring y Angular.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">Invoice Maker</h5>
+                        <p class="card-text">Aplicación de escritorio para la gestión de productos y clientes y generación de facturas de cualquier empresa.</p>
+                        <a href="#" class="btn btn-primary">Ver proyecto</a>
                     </div>
                 </div>
             </div>
@@ -184,6 +182,25 @@
         
         
         
+    </div>
+
+    <br><br><br><br>
+
+    <!--Contact Section-->
+
+    <div class="container">
+        <h2 class="titleSection" id="ContactSection">Contacto</h2>
+        <br><br>
+        <form action="sendmail.php" method="POST" enctype="multipart/form-data" name="EmailForm">
+            Name:<br>
+            <input type="text" size="19" name="name"><br><br>
+            Email:<br>
+            <input type="email" name="email"><br><br> 
+            Escribe aquí tu mensaje:<br> 
+            <textarea name="message" id="message" rows="6″ cols="20″>
+            </textarea><br><br> 
+            <button class="btn btn-primary" type="submit" value="Submit">Enviar</button>
+        </form>  
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

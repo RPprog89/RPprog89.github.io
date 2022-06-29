@@ -68,3 +68,7 @@ figure {
 .customCard {
     margin-top: 4em;
 }
+
+#message {
+    width: 100%;
+}
