@@ -194,7 +194,7 @@
         <h2 class="titleSection" id="ContactSection">Contacto</h2>
         <br><br>
 
-        <form action="https://formspree.io/f/xpzbeebj" method="POST" enctype="multipart/form-data" name="EmailForm">
+        <form action="https://formspree.io/f/xpzbeebj" method="POST" enctype="multipart/form-data" name="EmailForm" id="EmailForm">
             Nombre del remitente:<br>
             <input type="text" size="19" name="name" class="form-control" required><br><br>
             Correo al que puedo responder:<br>
@@ -210,9 +210,18 @@
 
     <footer id="footer">
         <div class="container">
-            <p>Linkedin : <a href="www.linkedin.com/in/rafaelrivasperez" class="linkfooter">www.linkedin.com/in/rafaelrivasperez</a></p>
+            <!--<p>Linkedin : <a href="www.linkedin.com/in/rafaelrivasperez" class="linkfooter">www.linkedin.com/in/rafaelrivasperez</a></p>-->
         </div>
     </footer>
 
 </body>
 </html>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function(){
+      let formulario = document.getElementById('EmailForm');
+      formulario.addEventListener('submit', function() {
+        formulario.reset();
+      });
+    });
+</script>
