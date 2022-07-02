@@ -80,3 +80,8 @@ figure {
     padding-top: 2em;
     padding-bottom: 2em;
 }
+
+.linkfooter {
+    text-decoration: none;
+    color: white;
+}
